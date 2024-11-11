@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <locale.h>
+int main(){
+	setlocale(LC_ALL,"Portuguese");
+	int i,j;
+	int m[3][3];
+	printf("Os valores da matriz: ");
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
+			printf("%d", m[3][3]);
+		}
+	}
+	
+}
