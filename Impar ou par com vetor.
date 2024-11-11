@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <locale.h>
+int main(){
+	setlocale(LC_ALL,"Portuguese");
+    int i, contimpar, v[10];
+    for(i=0;i<10;i++){
+    	printf("Digite um valor: ", i + 1);
+    	scanf("%d",&v[i]);
+	}
+	for(i=0;i<10;i++){
+		printf("O numero %d (%s)\n:", v[i],(v[i] % 2 == 0)?"E par":"E impar");
+	}
+}
