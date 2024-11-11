@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <locale.h>
+void preencherMatriz(int matriz[2][2], int vetor[], int tamanho){
+    int soma = 0;
+    for (int i = 0; i < tamanho; i++){
+        soma += vetor[i];
+    }
+    matriz[0][0] = soma;
+    matriz[0][1] = soma;
+    matriz[1][0] = soma;
+    matriz[1][1] = soma;
+}
+void imprimirMatriz(int matriz[2][2]){
+    printf("A matriz 2x2 preenchida é:\n");
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("%d ", matriz[i][j]);
+        }
+        printf("\n");
+    }
+}
+int main(){
+	setlocale(LC_ALL,"Portuguese");
+    int vetor[5];
+    int matriz[2][2];
+    printf("Preencha o vetor com 5 inteiros:\n");
+    for (int i = 0; i < 5; i++){
+        printf("Elemento %d: ", i + 1);
+        scanf("%d", &vetor[i]);
+    }
+    preencherMatriz(matriz, vetor, 5);
+    imprimirMatriz(matriz);
+}
