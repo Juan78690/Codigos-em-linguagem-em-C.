@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <locale.h>
+int main(){
+	setlocale(LC_ALL,"Portuguese");
+	int m[3][3],i,j,menor,maior;
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
+			printf("Digite o valor[%d][%d]: ",i,j);
+			scanf("%d",&m[i][j]);
+		}
+	}
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
+		   menor = m[i][j];
+		   maior = m[i][j];
+		}
+    }
+    for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
+		   if(m[i][j] < menor){menor = m[i][j];}
+		   }
+		}
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
+		   if(m[i][j] > maior){maior = m[i][j];}
+		   }
+		}
+	printf("O menor valor é: %d\n",menor);
+	printf("O maior valor é: %d\n",maior);
+    }
