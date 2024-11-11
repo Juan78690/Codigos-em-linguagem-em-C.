@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <locale.h>
+int main(){
+	setlocale(LC_ALL,"Portuguese");
+	int i;
+	int v[5];
+	for(i=0;i<5;i++){
+        printf("Digite um valor: ");
+        scanf("%d",&v[i]);
+        if(2 % == 0){
+			printf("Este número e par");
+		}else{
+			printf("Este número e impar");
+		}
+	}
+	printf("Os valores digitados foram: \n");
+	for(i=0;i<5;i++){
+		printf("%d\n",v[i]);	
+	}
+}
